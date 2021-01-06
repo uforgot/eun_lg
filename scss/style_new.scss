@@ -1,0 +1,130 @@
+#app {
+  width: 100%;
+  min-width : 1280px;
+}
+
+header {
+  position: relative;
+  width: 100%; height: 70px;
+  background: #404040;
+
+  .navigation {
+    position: relative;
+    margin: 0 auto;
+    width: 1280px; height: 100%;
+
+    img { vertical-align: middle; }
+
+    .logo {
+      height: 100%;
+      line-height: 70px;
+    }
+
+    .menu {
+      position: absolute;
+      top:0; right:0;
+      font-family: Noto Sans KR;
+      font-size: 20px;
+      line-height: 70px;
+      .item, .util {
+        display: inline-block;
+        position: relative;
+        padding: 0 53px;
+        a {color:#fff !important;}
+      }
+
+      .util {
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+section {
+  position: relative;
+  width: 100%;
+  .container-hero {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1920px; height: 870px;
+    .wrapper-video {
+      position: absolute;
+      left: 50%; top: 50%;
+      transform:translate3d(-50%, -50%,0);
+    }
+  }
+  .container {
+    //border:1px solid #000;
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+
+    .title-wrapper {
+      padding: 150px 0;
+      text-align: center;
+      color: #000;
+      font:500 40px  'Noto Sans KR';
+
+      &.left-line {
+        padding: 150px 0 100px 0;
+        text-align: left;
+        &::after {
+          display: inline-block;
+          position: relative;
+          width: 136px; height: 3px;
+          background: #000;
+          content:'';
+          vertical-align: middle;
+          margin-top:-5px;
+        }
+      }
+    }
+    .content-wrapper {
+
+      .compare {
+        font-size: 0;
+        width: 100%;
+        li {
+          position: relative;
+          display: inline-block;
+          width: 33.33%;
+          &:nth-child(2) {
+            text-align: center;
+          }
+          &:nth-child(3) {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-bottom:3px solid  #000000;
+  margin: 0 0 85px 0;
+
+  .btn {
+    background-color: #ffffff;
+    color: #000;
+    padding:10px 252px 10px 10px;
+    font-size: 16px; font-family:Noto Sans KR;
+    border: none;
+  }
+
+  .content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+}
+
+
+
