@@ -99,6 +99,12 @@ section .container .title-wrapper.left-line::after {
   margin-top: -5px;
 }
 
+section .container .float-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 section .container .content-wrapper .compare {
   font-size: 0;
   width: 100%;
@@ -142,5 +148,47 @@ section .container .content-wrapper .compare li:nth-child(3) {
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+
+#bg4_i1 {
+  position: absolute;
+  left: 317px;
+  top: 3220px;
+}
+
+#bg4_i2 {
+  position: absolute;
+  left: 1120px;
+  top: 4260px;
+}
+
+#bg4_i2_1 {
+  position: absolute;
+  left: 1120px;
+  top: 4300px;
+}
+
+#bg4_i3 {
+  position: absolute;
+  left: 526px;
+  top: 4821px;
+}
+
+#bg4_i3_1 {
+  position: absolute;
+  left: 526px;
+  top: 4877px;
+}
+
+#bg4_i4 {
+  position: absolute;
+  left: 1107px;
+  top: 5390px;
+}
+
+#bg4_i4_1 {
+  position: absolute;
+  left: 1110px;
+  top: 5452px;
 }
 /*# sourceMappingURL=style_new.css.map */

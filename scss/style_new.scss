@@ -6,7 +6,7 @@
 header {
   position: relative;
   width: 100%; height: 70px;
-  background: #404040;
+  background: #404040; 
 
   .navigation {
     position: relative;
@@ -80,8 +80,13 @@ section {
         }
       }
     }
-    .content-wrapper {
 
+    .float-wrapper {
+      position: absolute;
+      left:0; top:0;
+    }
+    
+    .content-wrapper {
       .compare {
         font-size: 0;
         width: 100%;
@@ -127,4 +132,10 @@ section {
 }
 
 
-
+#bg4_i1{position:absolute; left:317px; top:3220px;}
+#bg4_i2{position:absolute; left:1120px; top:4260px;}
+#bg4_i2_1{position:absolute; left:1120px; top:4300px;}
+#bg4_i3{position:absolute; left:526px; top:4821px;}
+#bg4_i3_1{position:absolute; left:526px; top:4877px;}
+#bg4_i4{position:absolute; left:1107px; top:5390px;}
+#bg4_i4_1{position:absolute; left:1110px; top:5452px;} 
