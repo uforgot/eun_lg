@@ -81,12 +81,18 @@ section {
       }
     }
 
-    .float-wrapper {
-      position: absolute;
-      left:0; top:0;
-    }
-    
     .content-wrapper {
+      position: relative;
+      .float-wrapper {
+        position: absolute;
+        left:0; top:0;
+      }
+      
+      .background-wrapper {
+        position: absolute;
+        left:0; top:0;
+      }
+
       .compare {
         font-size: 0;
         width: 100%;
@@ -132,7 +138,7 @@ section {
 }
 
 
-#bg4_i1{position:absolute; left:317px; top:3220px;}
+#bg4_i1{position:absolute; left:100px; top:1000px;}
 #bg4_i2{position:absolute; left:1120px; top:4260px;}
 #bg4_i2_1{position:absolute; left:1120px; top:4300px;}
 #bg4_i3{position:absolute; left:526px; top:4821px;}

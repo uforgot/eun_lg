@@ -11,8 +11,6 @@
     <link href="css/hover.css" rel="stylesheet" type="text/css"/>
     <link href="css/style_new.css" rel="stylesheet" type="text/css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="/js/jquery-3.3.1.js"></script>
-    <script src="/js/motion.js"></script>
 
     <!--폰트 : Noto Sans KR-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -109,10 +107,7 @@
 
     <section>
         <div class="container">
-            <div class="content-wrapper">
-                <img  src="images/bg4_i.jpg">
-            </div>
-            <div class="float-wrapper"> 
+            <div class="-wrapper"> 
                 <div id="bg4_i1"  data-aos="fade-up"data-aos-delay="600"><img src="images/bg4_i1.png"></div>
                 <div id="bg4_i2" data-aos="fade-left"data-aos-delay="600"><img src="images/bg4_i2.png"></div>
                 <div id="bg4_i2_1" data-aos="fade-left"data-aos-delay="600"><img src="images/bg4_i2_02.png"></div>
@@ -121,9 +116,55 @@
                 <div id="bg4_i4"  data-aos="fade-left"data-aos-delay="600"><img src="images/bg4_i4.png"></div>
                 <div id="bg4_i4_1"  data-aos="fade-left"data-aos-delay="600"><img src="images/bg4_i4_02.png"></div>
             </div>
+            <div class="content-wrapper">
+                <img  src="images/bg4_i.jpg">
+            </div>
         </div>
     </section>
 </div>
 
 </body>
+<!--fade 스크립트 시작-->
+<script src="js/fade/dist/aos.js"></script>
+        
+<script>
+AOS.init({
+     easing: 'ease-in-out-sine'
+});
+
+setInterval(addItem, 300);
+
+var itemsCounter = 1;
+var container = document.getElementById('aos-demo');
+
+function addItem () {
+     if (itemsCounter > 42) return;
+     var item = document.createElement('div');
+     item.classList.add('aos-item');
+     item.setAttribute('data-aos', 'fade-up');
+     item.innerHTML = '<div class="aos-item__inner"><h3>' + itemsCounter + '</h3></div>';
+    //  container.appendChild(item);
+     itemsCounter++;
+}
+</script>
+
+<!--fade 스크립트 끝-->
+
+<!--change 스크립트 시작-->
+<script>
+var bigPic = document.querySelector("#big");
+var smallPics = document.querySelectorAll(".small");
+
+for(var i = 0 ; i < smallPics.length ; i++ ){
+    smallPics[i] .addEventListener("click", changepic);
+}
+
+function changepic(){
+    var smallPicAttribute = this.getAttribute("src");
+    bigPic.setAttribute("src", smallPicAttribute);
+}
+
+</script>
+<!--change 스크립트 끝-->
+
 </html>
